@@ -70,7 +70,7 @@ const Navbar = () => {
                 onClick={() => navigate('/login')} 
                 className='bg-primary text-white px-7 py-2.5 rounded-full font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all hidden md:block'
               >
-                Get Started
+               Create Account
               </button>
         }
         
