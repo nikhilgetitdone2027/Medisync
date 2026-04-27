@@ -32,7 +32,7 @@ const DoctorContextProvider = (props) => {
         }
     }
 
-    // Getting Doctor profile data from Database using API
+    
     const getProfileData = async () => {
         try {
 
@@ -46,7 +46,7 @@ const DoctorContextProvider = (props) => {
         }
     }
 
-    // Function to cancel doctor appointment using API
+    
     const cancelAppointment = async (appointmentId) => {
 
         try {
@@ -56,7 +56,7 @@ const DoctorContextProvider = (props) => {
             if (data.success) {
                 toast.success(data.message)
                 getAppointments()
-                // after creating dashboard
+                
                 getDashData()
             } else {
                 toast.error(data.message)
@@ -69,7 +69,7 @@ const DoctorContextProvider = (props) => {
 
     }
 
-    // Function to Mark appointment completed using API
+    
     const completeAppointment = async (appointmentId) => {
 
         try {
@@ -79,7 +79,7 @@ const DoctorContextProvider = (props) => {
             if (data.success) {
                 toast.success(data.message)
                 getAppointments()
-                // Later after creating getDashData Function
+                
                 getDashData()
             } else {
                 toast.error(data.message)
@@ -92,7 +92,7 @@ const DoctorContextProvider = (props) => {
 
     }
 
-    // Getting Doctor dashboard data using API
+    
     const getDashData = async () => {
         try {
 
