@@ -33,7 +33,7 @@ const AdminContextProvider = (props) => {
 
     }
 
-    // Function to change doctor availablity using API
+    
     const changeAvailability = async (docId) => {
         try {
 
@@ -52,7 +52,7 @@ const AdminContextProvider = (props) => {
     }
 
 
-    // Getting all appointment data from Database using API
+    
     const getAllAppointments = async () => {
 
         try {
@@ -71,7 +71,7 @@ const AdminContextProvider = (props) => {
 
     }
 
-    // Function to cancel appointment using API
+    
     const cancelAppointment = async (appointmentId) => {
 
         try {
@@ -92,7 +92,7 @@ const AdminContextProvider = (props) => {
 
     }
 
-    // Getting Admin Dashboard data from Database using API
+    
     const getDashData = async () => {
         try {
 
@@ -111,17 +111,18 @@ const AdminContextProvider = (props) => {
 
     }
 
-    const value = {
-        aToken, setAToken,
-        doctors,
-        getAllDoctors,
-        changeAvailability,
-        appointments,
-        getAllAppointments,
-        getDashData,
-        cancelAppointment,
-        dashData
-    }
+   const value = {
+        backendUrl,
+    aToken, setAToken,
+    doctors,
+    getAllDoctors,
+    changeAvailability,
+    appointments,
+    getAllAppointments,
+    getDashData,
+    cancelAppointment,
+    dashData
+}
 
     return (
         <AdminContext.Provider value={value}>
