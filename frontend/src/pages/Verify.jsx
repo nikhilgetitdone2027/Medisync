@@ -15,7 +15,7 @@ const Verify = () => {
 
     const navigate = useNavigate()
 
-    // Function to verify stripe payment
+    
     const verifyStripe = async () => {
 
         try {
@@ -38,14 +38,15 @@ const Verify = () => {
     }
 
     useEffect(() => {
-        if (token, appointmentId, success) {
+        if (token && appointmentId && success) {
             verifyStripe()
         }
     }, [token])
 
     return (
         <div className='min-h-[60vh] flex items-center justify-center'>
-            <div className="w-20 h-20 border-4 border-gray-300 border-t-4 border-t-primary rounded-full animate-spin"></div>
+            {}
+            <div className="w-20 h-20 border-4 border-gray-200 border-t-4 border-t-red-600 rounded-full animate-spin"></div>
         </div>
     )
 }
