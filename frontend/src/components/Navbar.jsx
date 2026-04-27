@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-gray-200'>
       
-    
+      {}
       <div 
         onClick={() => navigate('/')} 
         className='flex items-center gap-2 cursor-pointer group'
@@ -32,7 +32,7 @@ const Navbar = () => {
         </span>
       </div>
 
-      
+      {}
       <ul className='md:flex items-center gap-8 font-semibold hidden text-gray-600'>
         <NavLink to='/' className={({ isActive }) => `relative pb-1 ${isActive ? 'text-primary' : 'hover:text-black'}`}>
           <li className='cursor-pointer'>HOME</li>
@@ -70,16 +70,16 @@ const Navbar = () => {
                 onClick={() => navigate('/login')} 
                 className='bg-primary text-white px-7 py-2.5 rounded-full font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all hidden md:block'
               >
-               Create Account
+                Create Account
               </button>
         }
         
-      
+        {/* --- MOBILE MENU ICON --- */}
         <button onClick={() => setShowMenu(true)} className='p-2 md:hidden hover:bg-gray-100 rounded-lg transition-colors'>
           <img className='w-6' src={assets.menu_icon} alt="Menu" />
         </button>
 
-    
+        {}
         <div className={`md:hidden fixed inset-0 z-50 bg-white transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className='flex items-center justify-between px-6 py-5 border-b'>
             <span className='text-lg font-bold text-primary'>MediSync</span>
