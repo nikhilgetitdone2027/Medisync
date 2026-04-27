@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
+console.log("Secret Check:", process.env.JWT_SECRET);
 
-// doctor authentication middleware
 const authDoctor = async (req, res, next) => {
     const { dtoken } = req.headers
     if (!dtoken) {
