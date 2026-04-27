@@ -8,7 +8,6 @@ Medisync is a comprehensive, modern healthcare platform designed to streamline d
 - **User Authentication**: Secure sign-up, login, and profile management.
 - **Find Doctors**: Browse doctors by specialty, view their profiles, experience, and consultation fees.
 - **Appointment Booking**: Select preferred dates and times to schedule appointments.
-- **Payment Integration**: Secure online payments using **Stripe** and **Razorpay**.
 - **User Dashboard**: Manage upcoming appointments, view appointment history, and cancel if necessary.
 
 ### **Admin & Doctor Portal (Admin)**
